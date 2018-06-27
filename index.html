@@ -2,7 +2,8 @@
 <html>
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110070021-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110070021-1"></script>
+    
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -121,7 +122,6 @@
       }
 
       #popup { 
-        opacity: 0;
         position: fixed;
         top: 100px;
         width: 55%;
@@ -129,6 +129,11 @@
         /**border: 1px solid #110816; **/
         background-color: rgba(214, 209, 219, 0.88);
         padding: 5px 10px;
+        display: none;
+      }
+      
+      #popup.visible {
+        display: block;
       }
       
       @media (max-width: 800px) {
@@ -175,7 +180,7 @@
   <body>
     <header>
       <h1>Eric William Lin &#183<span class='chinese'>林維亮</span> <span class='divider'>|</span><span class='description'>Fullstack Developer &amp Data Visualization Designer</span></h1>
-      <p class='about'>ABOUT</p>
+      <p id='about'>ABOUT</p>
     </header>
     <hr>
     
@@ -218,14 +223,33 @@
       <p>I buy too many books. <br><b>Just finished reading: </b>David Reich's <em>Who We Are and How We Got Here</em> <br><b>Currently reading: </b>Han's Rosling's <em>Factfulness</em> and Weike Wang's <em>Chemistry</em></p>
     </div>
     <script>
-      document.querySelector('.about').addEventListener('mouseover', function() {
-        document.getElementById('popup').style.opacity = 1; 
+      //document.querySelector('.about').addEventListener('mouseover', function() {
+      //  //document.getElementById('popup').style.display = 1; 
+      //  document.getElementById('popup').className = 'visible';
+      //  console.log('hello')
+      //});
+      //document.querySelector('.about').addEventListener('mouseout', function() {
+      //  //document.getElementById('popup').style.opacity = 0; 
+      //  document.getElementById('popup').className = 'hidden';
+      //  console.log('hello')
+      //});
+      let visibility = false; 
+      document.querySelector('#about').addEventListener('click', function() {
+        if (!visibility) {
+          document.getElementById('popup').classList.add('visible');
+          document.getElementById('about').innerHTML = 'CLOSE';
+
+          visibility = true; 
+          
+        } else {
+          document.getElementById('popup').removeAttribute('class');
+          document.getElementById('about').innerHTML = 'ABOUT';
+          visibility = false; 
+        }
+        
         console.log('hello')
       });
-      document.querySelector('.about').addEventListener('mouseout', function() {
-        document.getElementById('popup').style.opacity = 0; 
-        console.log('hello')
-      });
+      
     </script>
   </body>
 </html>
