@@ -3,7 +3,7 @@
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
        
-    
+    <!--
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110070021-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -12,7 +12,7 @@
       
       gtag('config', 'UA-110070021-1');
     </script>
-    
+    -->
     
     <title>Eric William Lin, Developer/Designer</title>
     <meta charset="utf-8"> 
@@ -45,6 +45,8 @@
         padding: 0 0; 
         margin: 0 0; 
       }
+      
+      
       
       h1 {
         padding-left: 20px;
@@ -107,7 +109,12 @@
       
       
       .section-heading {
-        height: 150px;
+        height: 220px;
+      }
+      
+      .section-heading p {
+        margin: 0 0; 
+        padding: 0 0; 
       }
       
       header {
@@ -137,7 +144,7 @@
         display: block;
       }
       
-      @media (max-width: 800px) {
+      @media (max-width: 960px) {
         header h1 {
           font-size: 1.5em;
         }
@@ -193,7 +200,9 @@
       <div class='inner-container'>
         <section>
           <div class='section-heading'>
-            <h3><a class='link-A' href='https://ewlin.github.io/NYPhil_data_viz/' target="_blank">Pulsecheck: Is Orchestral Music Still a Living Art Form in 2017?</a> (November 2017)</h3>
+            <h3><a class='link-A' href='https://ewlin.github.io/NYPhil_data_viz/'>Pulsecheck: Is Orchestral Music Still a Living Art Form in 2017?</a> (November 2017)</h3>
+            <p><b>Source data:</b> <a href='https://github.com/nyphilarchive/PerformanceHistory' target="_blank">New York Philharmonic GitHub page</a></p>
+            <p><b>Tools:</b> D3.js, ScrollMagic</p>
           </div>
           <img src="assets/NYPHIL/nyp1.png"/>
           <img src="assets/NYPHIL/nyp2.png"/>
@@ -207,6 +216,7 @@
         <section>
           <div class='section-heading'>
             <h3><a class='link-B'>Casting Shakespeare: What we can learn about how age, gender, and race affect casting from 1000+ productions of 10 Shakespearean plays between 1900 and 2018</a> <span>Coming soon, July 2018</span></h3>
+            <p><b>Tools:</b> Python/Beautiful Soup (data collection, web scraping), D3.js (interactivity, svg rendering, basic stats calculations), Moment.js, <a href='https://spotify.github.io/coordinator/' target="_blank">coördinator</a></p>
           </div>
           <img src="assets/SHAKESPEARE/shakes.gif"/>
           <img src="assets/SHAKESPEARE/shakespeare1.png"/>
