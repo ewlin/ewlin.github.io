@@ -2,20 +2,20 @@
 <html>
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-       
-    
+
+    <!--
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110070021-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      
+
       gtag('config', 'UA-110070021-1');
     </script>
-    
-    
+    -->
+
     <title>Eric William Lin, Developer/Designer</title>
-    <meta charset="utf-8"> 
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="description" content="林維亮 | Eric William Lin | Fullstack Developer & Data Visualization Designer">
     <meta property="og:title" content="林維亮 | Eric William Lin | Fullstack Developer & Data Visualization Designer" />
@@ -31,36 +31,36 @@
     <meta name="twitter:image" content="https://ewlin.github.io/assets/og-image.png">
     <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri:300,400|Nanum+Gothic:400,700,800|Work+Sans:300,400" rel="stylesheet">
     <style>
-      
+
       html {
         font-family: 'Hind Siliguri';
         font-weight: 300;
       }
-      
+
       .chinese {
         font-size: .9em;
       }
-      
+
       body {
-        padding: 0 0; 
-        margin: 0 0; 
+        padding: 0 0;
+        margin: 0 0;
       }
-      
-      
-      
+
+
+
       h1 {
         padding-left: 20px;
       }
-      
+
       h2 {
         padding-left: 10px;
       }
-      
+
       h1 span {
         font-size: .65em;
         padding-left: 10px;
       }
-      
+
       .container {
         padding: 15px;
         font-family: 'Work Sans';
@@ -70,58 +70,58 @@
         max-width: 1500px;
         margin: auto;
       }
-      
+
       .inner-container {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
       }
-      
+
       .inner-container section {
         width: 50%;
         padding: 10px 10px;
       }
-      
-      
+
+
       a {
         text-decoration: none;
       }
-      
+
       .link-A {
         border-bottom: 2px solid Steelblue;
         color: black;
       }
-      
+
       .link-B {
         border-bottom: 2px solid Steelblue;
         opacity: .55;
       }
-      
+
       img {
         width: 100%;
         padding-bottom: 10px;
       }
-      
+
       img.mobile-img {
         width: 49%;
       }
-      
-      
-      
+
+
+
       .section-heading {
         height: 220px;
       }
-      
+
       .section-heading p {
-        margin: 0 0; 
-        padding: 0 0; 
+        margin: 0 0;
+        padding: 0 0;
       }
-      
+
       header {
         display: flex;
         justify-content: space-between;
       }
-      
+
       header p {
         line-height: 65px;
         vertical-align: middle;
@@ -129,7 +129,7 @@
         cursor: pointer;
       }
 
-      #popup { 
+      #popup {
         position: fixed;
         top: 100px;
         width: 55%;
@@ -139,61 +139,61 @@
         padding: 5px 10px;
         display: none;
       }
-      
+
       #popup.visible {
         display: block;
       }
-      
+
       @media (max-width: 960px) {
         header h1 {
           font-size: 1.5em;
         }
-        
-        
+
+
         span.chinese {
           font-size: 1em;
         }
-        
+
         .inner-container {
           flex-direction: column;
         }
-        
+
         .inner-container section {
           width: 100%;
         }
-        
+
         span.description {
           display: block;
           padding: 0 0;
         }
-        
+
         span.divider {
           display: none;
         }
-        
-        #popup { 
+
+        #popup {
           width: 95%;
           left: 0;
           font-size: .85em;
         }
-        
+
         .section-heading {
           height: auto;
           font-size: 1em;
         }
-        
+
       }
-      
+
     </style>
   </head>
-  
+
   <body>
     <header>
       <h1>Eric William Lin &#183<span class='chinese'>林維亮</span> <span class='divider'>|</span><span class='description'>Fullstack Developer &amp Data Visualization Designer</span></h1>
       <p id='about'>ABOUT</p>
     </header>
     <hr>
-    
+
     <div class='container'>
       <h2>Interactive Data Visualizations</h2>
       <hr>
@@ -215,7 +215,7 @@
         </section>
         <section>
           <div class='section-heading'>
-            <h3><a class='link-B'>Casting Shakespeare: What we can learn about how age, gender, and race affect casting from 1000+ productions of 10 Shakespearean plays between 1900 and 2018</a> <span>Coming soon, July 2018</span></h3>
+            <h3><a class='link-B'>Casting Shakespeare: What we can learn about how age, gender, and race affect casting from 1000+ productions of 10 Shakespearean plays between 1900 and 2018</a> <span>Coming soon, August 2018</span></h3>
             <p><b>Tools:</b> Python/Beautiful Soup (data collection, web scraping), D3.js (interactivity, svg rendering, basic stats calculations), Moment.js, <a href='https://spotify.github.io/coordinator/' target="_blank">coördinator</a></p>
           </div>
           <img src="assets/SHAKESPEARE/shakes.gif"/>
@@ -237,32 +237,32 @@
     </div>
     <script>
       //document.querySelector('.about').addEventListener('mouseover', function() {
-      //  //document.getElementById('popup').style.display = 1; 
+      //  //document.getElementById('popup').style.display = 1;
       //  document.getElementById('popup').className = 'visible';
       //  console.log('hello')
       //});
       //document.querySelector('.about').addEventListener('mouseout', function() {
-      //  //document.getElementById('popup').style.opacity = 0; 
+      //  //document.getElementById('popup').style.opacity = 0;
       //  document.getElementById('popup').className = 'hidden';
       //  console.log('hello')
       //});
-      let visibility = false; 
+      let visibility = false;
       document.querySelector('#about').addEventListener('click', function() {
         if (!visibility) {
           document.getElementById('popup').classList.add('visible');
           document.getElementById('about').innerHTML = 'CLOSE';
 
-          visibility = true; 
-          
+          visibility = true;
+
         } else {
           document.getElementById('popup').removeAttribute('class');
           document.getElementById('about').innerHTML = 'ABOUT';
-          visibility = false; 
+          visibility = false;
         }
-        
+
         console.log('hello')
       });
-      
+
     </script>
   </body>
 </html>
