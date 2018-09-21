@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+  
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
    
@@ -47,14 +47,19 @@
         margin: 0 0;
       }
 
-
+      p {
+        margin: 0;
+      }
 
       h1 {
         padding-left: 20px;
+        margin: 0;
       }
 
       h2 {
         padding-left: 10px;
+        margin: 0;
+
       }
 
       h1 span {
@@ -86,6 +91,7 @@
 
       a {
         text-decoration: none;
+        color: black;
       }
 
       .link-A {
@@ -121,18 +127,31 @@
       header {
         display: flex;
         justify-content: space-between;
+        padding-top: 20px;
       }
 
       header p {
+        display: inline-block;
         line-height: 65px;
         vertical-align: middle;
         padding-right: 20px;
         cursor: pointer;
       }
+      
+      .menu {
+        display: 
+      }
 
+      #popup p {
+        padding-bottom: 10px;
+      }
+      
+      #popup a {
+        border-bottom: 1px solid grey;
+      }
+      
       #popup {
         position: fixed;
-        top: 100px;
         width: 55%;
         right: 20px;
         /**border: 1px solid #110816; **/
@@ -150,6 +169,12 @@
           font-size: 1.5em;
         }
 
+        .menu {
+          padding-left: 20px;
+        }
+        header {
+          flex-direction: column;
+        }
 
         span.chinese {
           font-size: 1em;
@@ -176,7 +201,7 @@
         #popup {
           width: 95%;
           left: 0;
-          font-size: .85em;
+          font-size: .8em;
         }
 
         .section-heading {
@@ -192,7 +217,10 @@
   <body>
     <header>
       <h1>Eric William Lin &#183<span class='chinese'>林維亮</span> <span class='divider'>|</span><span class='description'>Fullstack Developer &amp Data Visualization Designer</span></h1>
-      <p id='about'>ABOUT</p>
+      <div class='menu'>
+        <p id='about'>ABOUT</p>
+        <p id='contact'><a href="mailto:hello@ericwilliamlin.com">CONTACT</a></p>
+      </div>
     </header>
     <hr>
 
@@ -236,7 +264,7 @@
     </div>
     <div id='popup'>
       <p>I'm a freelance fullstack developer based in NYC. I've previously served as the Head of Technology at a now-defunct startup called TapTape, and before that, I attempted another startup in the edtech space. These days, I'm obsessed with designing and coding beautiful interactive data visualizations, and my toolkit involves a lot of Python and JavaScript (e.g., D3). My data viz projects have been featured in places like <a target="_blank" href='http://www.visualisingdata.com/2018/04/best-visualisation-web-january-2018/'>Visualising Data</a>.</p>
-      <p>If you're interested in collaborating on or commissioning a piece of data viz, tweet at me @ericwilliamlin. You can also find me on GitHub at <b>/ewlin</b>.</p>
+      <p>If you're interested in collaborating on or commissioning a piece of data viz, <a href="mailto:hello@ericwilliamlin.com">email me</a> or tweet at me @ericwilliamlin. You can also find me on GitHub at <b>/ewlin</b>.</p>
       <p>I sometimes teach, and currently, I'm a Lead Instructor of the Coding for Managers courses at Product School's NYC campus. I also give the occasional tech talk.</p>
       <p>I buy too many books. <br><b>Just finished reading:</b> <em>Imperial Twilight: The Opium War and the End of China's Last Golden Age</em> by Stephen R. Platt, and <em>The Art of Gathering: How We Meet and Why it Matters</em> by Priya Parker. <br><b>Currently reading:</b> <em>Playing Changes: Jazz for the New Century</em> by Nate Chinen</p>
     </div>
@@ -253,11 +281,14 @@
       //});
       let visibility = false;
       document.querySelector('#about').addEventListener('click', function() {
+        const heightTop = document.querySelector('header').getBoundingClientRect().height; 
+        
         if (!visibility) {
           document.getElementById('popup').classList.add('visible');
           document.getElementById('about').innerHTML = 'CLOSE';
-
-          visibility = true;
+          
+          document.getElementById('popup').setAttribute('style', `top: ${heightTop}px;`); 
+          visibility = true; 
 
         } else {
           document.getElementById('popup').removeAttribute('class');
