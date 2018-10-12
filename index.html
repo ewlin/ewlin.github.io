@@ -3,7 +3,7 @@
   
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
-   
+    
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110070021-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -92,14 +92,20 @@
       a {
         text-decoration: none;
         color: black;
+
+      }
+      
+      a.special {
+        border-bottom: 1px dotted grey;
+
       }
 
-      .link-A {
+      a.link-A {
         border-bottom: 2px solid Steelblue;
         color: black;
       }
 
-      .link-B {
+      a.link-B {
         border-bottom: 2px solid Steelblue;
         opacity: .55;
       }
@@ -116,7 +122,7 @@
 
 
       .section-heading {
-        height: 220px;
+        height: 260px;
       }
 
       .section-heading p {
@@ -228,25 +234,13 @@
       <h2>Interactive Data Visualizations</h2>
       <hr>
       <div class='inner-container'>
-        <section>
-          <div class='section-heading'>
-            <h3><a class='link-A' target="_blank" href='https://ericwilliamlin.com/NYPhil_data_viz/'><b>Pulsecheck:</b> <em>Is Orchestral Music Still a Living Art Form in 2017?</em></a> <span>(November 2017)</span></h3>
-            <p><b>Source data:</b> <a href='https://github.com/nyphilarchive/PerformanceHistory' target="_blank">New York Philharmonic GitHub page</a></p>
-            <p><b>Tools:</b> D3.js, ScrollMagic</p>
-          </div>
-          <img src="assets/NYPHIL/nyp1.png"/>
-          <img src="assets/NYPHIL/nyp2.png"/>
-          <img src="assets/NYPHIL/nyp3.png"/>
-          <img class='mobile-img' src="assets/NYPHIL/nyp4.png"/>
-          <img class='mobile-img' src="assets/NYPHIL/nyp5.png"/>
-
-
-
-        </section>
+        
         <section>
           <div class='section-heading'>
             <h3><a class='link-A' target="_blank" href='https://ericwilliamlin.com/shakespeare_production_data'><b>Casting Shakespeare:</b> <em>What we can learn about how age, gender, and race affect casting from 1000+ productions of 10 Shakespearean plays between 1900 and 2018</em></a> <span>(September 2018)</span></h3>
             <p><b>Tools:</b> Python/Beautiful Soup (data collection, web scraping), D3.js (interactivity, svg rendering, basic stats calculations), Moment.js, <a href='https://spotify.github.io/coordinator/' target="_blank">coördinator</a></p>
+            <p><b>Awards:</b> <a class='special' href='https://www.informationisbeautifulawards.com/showcase?acategory=people-language-identity&action=index&award=2018&controller=showcase&page=1&pcategory=short-list&type=awards' target='_blank'>2018 Kantar Information is Beautiful Awards, <em>People, Language & Identity, <b>Shortlist</b></em></a></p>
+
           </div>
           <img src="assets/SHAKESPEARE/shakes.gif"/>
           <img src="assets/SHAKESPEARE/shakespeare1.png"/>
@@ -257,6 +251,20 @@
           <img src="assets/SHAKESPEARE/shakespeare3.png"/>
 
 
+        </section>
+        
+        <section>
+          <div class='section-heading'>
+            <h3><a class='link-A' target="_blank" href='https://ericwilliamlin.com/NYPhil_data_viz/'><b>Pulsecheck:</b> <em>Is Orchestral Music Still a Living Art Form in 2017?</em></a> <span>(November 2017)</span></h3>
+            <p><b>Source data:</b> <a href='https://github.com/nyphilarchive/PerformanceHistory' target="_blank">New York Philharmonic GitHub page</a></p>
+            <p><b>Tools:</b> D3.js, ScrollMagic</p>
+          </div>
+          <img src="assets/NYPHIL/nyp2.png"/>
+          <img src="assets/NYPHIL/nyp1.png"/>
+          <img src="assets/NYPHIL/nyp3.png"/>
+          <img class='mobile-img' src="assets/NYPHIL/nyp4.png"/>
+          <img class='mobile-img' src="assets/NYPHIL/nyp5.png"/>
+
 
 
         </section>
@@ -265,7 +273,7 @@
     <div id='popup'>
       <p>I'm a freelance fullstack developer based in NYC. I previously served as the Head of Technology at a now-defunct startup called TapTape, and before that, I attempted another startup in the edtech space. These days, I'm obsessed with designing and coding beautiful interactive data visualizations, and my toolkit involves a lot of Python and JavaScript (e.g., D3). My data viz projects have been featured in places like <a target="_blank" href='http://www.visualisingdata.com/2018/04/best-visualisation-web-january-2018/'>Visualising Data</a>.</p>
       <p>If you're interested in collaborating on or commissioning a piece of data viz, <a href="mailto:hello@ericwilliamlin.com">email me</a> or tweet at me @ericwilliamlin. You can also find me on GitHub at <b>/ewlin</b>.</p>
-      <p>I buy too many books. <br><b>Just finished reading:</b> <em>Imperial Twilight: The Opium War and the End of China's Last Golden Age</em> by Stephen R. Platt<br><b>Currently reading:</b> <em>Playing Changes: Jazz for the New Century</em> by Nate Chinen, <em>Tyrant: Shakespeare on Politics</em> by Stephen Greenblatt, and 喬靖夫的【武道狂之詩】</p>
+      <p>I buy too many books. <br><b>Just finished reading:</b> <em>Imperial Twilight: The Opium War and the End of China's Last Golden Age</em> by Stephen R. Platt and <em>Tyrant: Shakespeare on Politics</em> by Stephen Greenblatt<br><b>Currently reading:</b> <em>Playing Changes: Jazz for the New Century</em> by Nate Chinen and 喬靖夫的【武道狂之詩】</p>
     </div>
     <script>
       //document.querySelector('.about').addEventListener('mouseover', function() {
