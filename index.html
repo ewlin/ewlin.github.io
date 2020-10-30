@@ -117,6 +117,19 @@
       .container li {
         line-height: 1.4em;
       }
+
+      .container .top-container {
+        margin-top: 10px;
+        padding: 15px 15px;
+        background: #b2d8d8;
+        box-shadow: 4px 3px 5px #959c99;
+      }
+
+      .container .top-container a {
+        border-bottom: 1px dashed black;
+      }
+
+
       .inner-container {
         display: flex;
         flex-direction: row;
@@ -266,8 +279,14 @@
           font-size: 1em;
         }
 
+
         .inner-container {
           flex-direction: column;
+        }
+
+        .container .top-container {
+          padding-left: 10px;
+          padding-right: 10px;
         }
 
         .inner-container section {
@@ -320,6 +339,7 @@
     <div class='container'>
       <h2>Interactive Data Visualizations</h2>
       <hr>
+      <div class='top-container'><b class='news-date'>November 2020 news</b>: I created an exclusive new piece–a cocktail diary data viz–for the award-winning <a href="https://www.marketcafemag.com/">Market Cafe Magazine's</a> latest issue ("Data Cookbook"). It's a limited run of 800 copies so <a href='https://www.marketcafemag.com/product/market-cafe-magazine-issue-6'>pre-order</a> your copy before they sell out!</div>
       <div class='inner-container'>
 
         <section>
