@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+
+    <!--Global site tag (gtag.js) - Google Analytics-->
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110070021-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-110070021-1');
+    </script>
+
+  <head>
+
+    <title>Eric William Lin, Developer/Designer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="林維亮 | Eric William Lin | Fullstack Developer & Data Visualization Designer">
+    <meta property="og:title" content="林維亮 | Eric William Lin | Fullstack Developer & Data Visualization Designer" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://ewlin.github.io/assets/og-image.png" />
+    <meta property="og:url" content="https://ewlin.github.io" />
+    <meta property="og:description" content="Eric William Lin | Fullstack Developer & Data Visualization Designer" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@ericwilliamlin" />
+    <meta name="twitter:title" content="林維亮 | Eric William Lin | Fullstack Developer & Data Visualization Designer">
+    <meta name="twitter:site" content="https://ewlin.github.io" />
+    <meta name="twitter:description" content="林維亮 | Eric William Lin | Fullstack Developer & Data Visualization Designer">
+    <meta name="twitter:image" content="https://ewlin.github.io/assets/og-image.png">
+    <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri:300,400|Nanum+Gothic:400,700,800|Work+Sans:300,400" rel="stylesheet">
+    <link rel="icon" href="assets/favicon.png">
+    <style>
+
+
+      html {
+        font-family: 'Hind Siliguri';
+        font-weight: 300;
+      }
+
+
+      .chinese {
+        font-size: .9em;
+      }
+
+      body {
+        padding: 0 0;
+        margin: 0 0;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      h1 {
+        padding-left: 20px;
+        margin: 0;
+      }
+
+      h2 {
+        padding-left: 10px;
+        padding-top: 20px;
+        margin: 0;
+      }
+
+      h1 span {
+        font-size: .65em;
+        padding-left: 10px;
+      }
+
+      ul, li {
+        margin: 0 auto;
+        list-style-type: none;
+        padding-left: 1%;
+        **/
+      }
+
+      ul li {
+        padding-bottom: 18px;
+      }
+
+      li div {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      div.image-container {
+        width: 13%;
+      }
+
+      div.text-right {
+        width: 80%;
+        margin-left: 5%;
+      }
+
+      .image-container img {
+        padding: 5px;
+        width: 100%;
+        border-radius: 50%;
+      }
+
+      ul {
+        padding-bottom: 10px;
+        padding-top: 10px;
+      }
+      .container {
+        padding: 15px;
+        font-family: 'Work Sans';
+        font-weight: 300;
+        line-height: 1.7em;
+        overflow: hidden;
+        max-width: 1500px;
+        margin: auto;
+      }
+
+      .container li {
+        line-height: 1.4em;
+      }
+
+      .container .top-container {
+        margin-top: 10px;
+        padding: 15px 15px;
+        background: #b2d8d8;
+        box-shadow: 4px 3px 5px #959c99;
+      }
+
+      .container .top-container a {
+        border-bottom: 1px dashed black;
+      }
+
+
+      .inner-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      .inner-container section {
+        width: 50%;
+        padding: 10px 10px;
+      }
+
+
+      a {
+        text-decoration: none;
+        color: black;
+
+      }
+
+      a.special {
+        border-bottom: 1px dotted grey;
+
+      }
+
+      a.link-A {
+        border-bottom: 2px solid Steelblue;
+        color: black;
+      }
+
+      a.link-B {
+        border-bottom: 2px solid Steelblue;
+        opacity: .55;
+      }
+
+      img {
+        width: 100%;
+        padding-bottom: 10px;
+      }
+
+      img.mini-img {
+        margin: auto;
+        width: 50%;
+        border: 3px solid grey;
+        padding-bottom: 0;
+
+
+      }
+
+      div.img-container {
+        text-align: center;
+      }
+
+      img.mobile-img {
+        width: 49%;
+      }
+
+
+
+
+
+      .section-heading {
+        height: auto;
+        padding-bottom: 15px;
+      }
+
+      .section-heading .sub-heading {
+        border-bottom: 3px solid black;
+        display: inline-block;
+        line-height: 1;
+        padding-bottom: 3px;
+        margin-bottom: 13px;
+      }
+
+      .section-heading p {
+        margin: 0 0;
+        padding: 0 0;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+      }
+
+      header p {
+        display: inline-block;
+        line-height: 65px;
+        vertical-align: middle;
+        padding-right: 20px;
+        cursor: pointer;
+      }
+
+      .menu {
+        display:
+      }
+
+      #popup p {
+        padding-bottom: 10px;
+      }
+
+      #popup a {
+        border-bottom: 1px solid grey;
+      }
+
+      #popup {
+        position: fixed;
+        width: 55%;
+        right: 20px;
+        /**border: 1px solid #110816; **/
+        background-color: rgba(214, 209, 219, 0.95);
+        padding: 5px 10px;
+        display: none;
+      }
+
+      #popup.visible {
+        display: block;
+      }
+
+      @media (max-width: 970px) {
+        header h1 {
+          font-size: 1.5em;
+        }
+
+        header p {
+          line-height: 40px;
+        }
+
+        h1 span {
+          line-height: 1em;
+        }
+
+        h3 {
+          font-size: 17px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+
+        .menu {
+          padding-left: 20px;
+        }
+        header {
+          flex-direction: column;
+        }
+
+        span.chinese {
+          font-size: 1em;
+        }
+
+
+        .inner-container {
+          flex-direction: column;
+        }
+
+        .container .top-container {
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+
+        .inner-container section {
+          width: 100%;
+          box-sizing: border-box;
+          padding: 10px 1px;
+        }
+
+        h2 {
+          padding-left: 1px;
+          margin: 0;
+
+        }
+
+        span.description {
+          display: block;
+          padding: 0 0;
+        }
+
+        span.divider {
+          display: none;
+        }
+
+        #popup {
+          width: 95%;
+          left: 0;
+          font-size: .8em;
+        }
+
+        .section-heading {
+          height: auto;
+          font-size: 1em;
+        }
+
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Eric William Lin &#183<span class='chinese'>林維亮</span> <span class='divider'>|</span><span class='description'>Fullstack Developer &amp Information Designer</span></h1>
+      <div class='menu'>
+        <p id='about'>ABOUT</p>
+        <p id='contact'><a href="mailto:hello@ericwilliamlin.com">CONTACT</a></p>
+      </div>
+    </header>
+    <hr>
+
+    <div class='container'>
+      <div class='top-container'><b class='news-date'>November 2020 news</b>: I created an exclusive new piece–a cocktail diary data viz–for the award-winning <a target="_blank" href="https://www.marketcafemag.com/">Market Cafe Magazine's</a> latest issue ("Data Cookbook"). It's a limited run of 800 copies so <a target="_blank" href='https://www.marketcafemag.com/product/market-cafe-magazine-issue-6-1'>order</a> your copy before they sell out!</div>
+
+      <h2>Interactive Data Visualizations</h2>
+      <hr>
+      <div class='inner-container'>
+
+        <section>
+          <div class='section-heading'>
+            <h3><a class='link-A' target="_blank" href='https://ericwilliamlin.com/shakespeare_production_data'><b>Casting Shakespeare:</b> <em>How age, gender, and race affect casting</em></a> <span>(September 2018)</span></h3>
+            <a target="_blank" href='https://ericwilliamlin.com/shakespeare_production_data'><img src="assets/SHAKESPEARE/shakes.gif"/></a>
+            <p class='sub-heading'><b>AWARDS</b></p>
+            <ul>
+              <li>
+                <div class='image-container'>
+                  <img src="assets/EXTERNAL/IIB.png" />
+                </div>
+                <div class='text-right'>
+                  <p><b>BRONZE</b>, <a class='special' target='_blank' href='https://www.informationisbeautifulawards.com/showcase/3282-casting-shakespeare'><em>People, Language & Identity</em></a></p>
+                  <p><a class='special' href='https://www.informationisbeautifulawards.com/news/323-information-is-beautiful-awards-2018-the-winners' target='_blank'><b>2018 Kantar Information is Beautiful Awards</b></a></p>
+                </div>
+              </li>
+              <li>
+                <div class='image-container'>
+                  <img src="assets/EXTERNAL/Pudding.jpg" />
+                </div>
+                <div class='text-right'>
+                  <p><b>WINNER</b>, the best visual and data-driven stories of 2018</p>
+                  <p><a class='special' href='https://pudding.cool/process/pudding-awards-2018' target='_blank'><b>The Pudding Cup 2018</b></a></p>
+                </div>
+              </li>
+            </ul>
+            <p class='sub-heading'><b>PRESS</b></p>
+            <ul>
+              <li>
+                <div class='image-container'>
+                  <img src="assets/EXTERNAL/Dataviz_Today.jpg" />
+                </div>
+                <div class='text-right'>
+                  <p><b>Data Viz Today with Alli Torban</b></p>
+                  <p><a class='special' href='https://dataviztoday.com/shownotes/34' target='_blank'>Episode 34: How to Harness the Power & Beauty of a Box Plot</a></p>
+                </div>
+              </li>
+            </ul>
+
+            <!--<div class='img-container'>
+              <img class='mini-img' src="assets/SHAKESPEARE/iib.jpg"/>
+
+            </div>-->
+
+          </div>
+
+          <!--<div style="padding-bottom: 15px;">
+            <hr>
+          </div>-->
+
+          <img src="assets/SHAKESPEARE/shakespeare1.png"/>
+          <img src="assets/SHAKESPEARE/shakespeare4.png"/>
+          <img src="assets/SHAKESPEARE/shakespeare5.png"/>
+          <img src="assets/SHAKESPEARE/shakespeare7.png"/>
+          <img src="assets/SHAKESPEARE/shakespeare6.png"/>
+          <img src="assets/SHAKESPEARE/shakespeare3.png"/>
+          <p><b>Tools:</b> Python/Beautiful Soup (data collection, web scraping), D3.js (interactivity, svg rendering, basic stats calculations), Moment.js, <a href='https://spotify.github.io/coordinator/' target="_blank">coördinator</a></p>
+
+
+
+        </section>
+
+        <section>
+          <div class='section-heading'>
+            <h3><a class='link-A' target="_blank" href='https://ericwilliamlin.com/NYPhil_data_viz/'><b>Pulsecheck:</b> <em>Is Orchestral Music Still a Living Art Form in 2017?</em></a> <span>(November 2017)</span></h3>
+            <a target="_blank" href='https://ericwilliamlin.com/NYPhil_data_viz/'><img src="assets/NYPHIL/nyp2.png"/></a>
+            <p class='sub-heading'><b>PRESS</b></p>
+            <ul>
+                <li>
+                  <div class='image-container'>
+                    <img src="assets/EXTERNAL/Visualising_Data.jpg" />
+                  </div>
+                  <div class='text-right'>
+                    <p><b>Visualising Data</b></p>
+                    <p><a class='special' target="_blank" href='http://www.visualisingdata.com/2018/04/best-visualisation-web-january-2018/'>Best of the Visualisation Web, January 2018</a></p>
+                  </div>
+                </li>
+            </ul>
+
+          </div>
+          <img src="assets/NYPHIL/nyp1.png"/>
+          <img src="assets/NYPHIL/nyp3.png"/>
+          <img class='mobile-img' src="assets/NYPHIL/nyp4.png"/>
+          <img class='mobile-img' src="assets/NYPHIL/nyp5.png"/>
+          <p><b>Source data:</b> <a href='https://github.com/nyphilarchive/PerformanceHistory' target="_blank">New York Philharmonic GitHub page</a></p>
+          <p><b>Tools:</b> D3.js, ScrollMagic</p>
+
+
+        </section>
+      </div>
+    </div>
+    <div id='popup'>
+      <p>I'm a fullstack developer, consultant, and information designer based in NYC. I previously served as the Head of Technology at a music crowd investment startup called <a target="_blank" href='https://arts.mit.edu/mixing-art-entrepreneurship-soundspark-wins-10k-prize/'>TapTape</a>, and before that, I co-founded another startup in the edtech space. These days, I spend a lot of time exploring and trying to push the boundries of how to communicate data, in all its forms, and my toolkit involves a lot of Python and JavaScript. My data viz projects have been featured in places like <a target="_blank" href='http://www.visualisingdata.com/2018/04/best-visualisation-web-january-2018/'>Visualising Data</a>.</p>
+      <p>You can reach me via <a href="mailto:hello@ericwilliamlin.com">email</a> or <a href='https://twitter.com/ericwilliamlin' target="_blank">Twitter</a>. Read more about what I've been up to <a target="_blank" href='https://www.informationisbeautifulawards.com/news/346-where-are-they-now-eric-aditya'>here</a>.</p>
+      <p>I buy too many books but can't read them fast enough. <br><b>Currently reading:</b> <em>A Swin in a Pond in the Rain</em> by George Saunders, and re-reading <em>Exhalation</em> by Ted Chiang.<br></p>
+    </div>
+    <script>
+      let visibility = false;
+      document.querySelector('#about').addEventListener('click', function() {
+        const heightTop = document.querySelector('header').getBoundingClientRect().height;
+
+        if (!visibility) {
+          document.getElementById('popup').classList.add('visible');
+          document.getElementById('about').innerHTML = 'CLOSE';
+
+          document.getElementById('popup').setAttribute('style', `top: ${heightTop}px;`);
+          visibility = true;
+
+        } else {
+          document.getElementById('popup').removeAttribute('class');
+          document.getElementById('about').innerHTML = 'ABOUT';
+          visibility = false;
+        }
+
+      });
+
+    </script>
+    <!--<script src="https://infobawards.s3.amazonaws.com/2018/badges/iiba-ll-l.js" id="iib-awards-badge"></script>-->
+
+  </body>
+</html>
